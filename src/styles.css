@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(46, 1, 48);
+  background-color: #1a2530;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -10,5 +10,14 @@ body {
 }
 
 .row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.col {
+  margin-top: 20px;
+}
+.btn {
+  border-radius: 15px;
   margin-top: 20px;
 }
