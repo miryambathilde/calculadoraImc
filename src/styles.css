@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgb(46, 1, 48);
+  font-family: 'Roboto', sans-serif;
+}
+
+.titulo {
+  margin-top: 15px;
+  text-align:center;
+  color: white;
+}
+
+.row {
+  margin-top: 20px;
+}
