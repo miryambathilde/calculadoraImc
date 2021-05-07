@@ -3,6 +3,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+p {
+  color: white;
+  text-align: center;
+}
+
 .titulo {
   margin-top: 15px;
   text-align:center;
@@ -20,4 +25,12 @@ body {
 .btn {
   border-radius: 15px;
   margin-top: 20px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }

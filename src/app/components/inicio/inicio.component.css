@@ -3,4 +3,30 @@
   height: 130px;
   border-radius: 18px;
   margin: 10px;
+  color: rgb(255, 255, 255);
 }
+
+.sexo {
+  font-size: 40px;
+}
+
+.estilonumero {
+  font-size: 32px;
+  font-weight: 800px;
+  margin-top: -20px;
+}
+
+.cm {
+  font-size: 18px;
+  font-weight: 400px;
+  margin-left: -5px;
+}
+
+.form-range {
+  padding: 0px 20px;
+}
+
+input [type=range]::-webkit-slider-thumb{
+  background: rgb(56, 56, 243);
+}
+
