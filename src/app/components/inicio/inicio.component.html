@@ -27,8 +27,11 @@
       <div class="fondoItem">
           <div class="contenedor">
           <p>Altura:</p>
-          <div class="estilonumero">170<span class="cm">cm</span></div>
-          <input type="range" class="form-range">
+          <!-- ALTURA DINAMICO -->
+          <div class="estilonumero">{{altura}} <span class="cm"> cm</span></div>
+          <!-- ALTURA DINAMICO = LE DECIMOS QUE VALUE, el valor, ES LO QUE TIENE ALTURA e indicamos que el valor minimo es 120 y maximo de 220cm -->
+          <!-- event binding INPUT y le pasamos el metodo cambiarAltura y le pasamos por parametro el evento-->
+          <input type="range" (input)="cambiarAltura($event)" [value]="altura" min="120" max="220" class="form-range">
         </div>
       </div>
     </div>
