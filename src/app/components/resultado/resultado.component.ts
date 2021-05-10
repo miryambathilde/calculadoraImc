@@ -32,13 +32,13 @@ export class ResultadoComponent implements OnInit {
   getResultado(){
     if(this.imc >= 25){
       this.resultado = "Sobrepeso";
-      this.interpretacion = "Debes intentar comer más saludable y hacer algo de ejercicio para bajar de peso y alcanzar tu peso ideal.";
+      this.interpretacion = "Debes intentar comer más saludable y hacer algo de ejercicio para bajar de peso y tener un peso saludable.";
     } else if (this.imc>= 18.5) {
       this.resultado = "Peso normal";
       this.interpretacion = "Estás dentro de tu peso ideal. ¡Enhorabuena y sigue así!";
     } else {
       this.resultado = "Bajo peso";
-      this.interpretacion = "Estás por debajo de tu peso ideal. Debes intentar comer más para alcanzarlo";
+      this.interpretacion = "Estás por debajo de tu peso ideal. Debes intentar comer más para alcanzarlo.";
     }
   }
 
