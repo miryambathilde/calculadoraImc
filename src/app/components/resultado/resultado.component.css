@@ -1,0 +1,38 @@
+.fondoItem {
+  background-color: #f3aacc;
+  height: 420px;
+  border-radius: 18px;
+  /* margin: 10px; */
+  color: rgb(255, 255, 255);
+}
+
+.resultado {
+  color: rgb(43, 41, 41);
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.estiloNumero {
+  font-size: 82px;
+  font-weight: 900;
+  padding-top: 25px;
+  padding-bottom: 45px;
+  color: rgb(43, 41, 41);
+}
+
+.interpretacion {
+  margin: 10px;
+  font-size: 18px;
+  color: rgb(49, 45, 47);
+}
+
+.btn-color {
+  background-color: rgb(173, 30, 102);
+  border-color:rgb(173, 30, 102);
+  color: white;
+}
+
+.btn-color:hover {
+  background-color:rgb(133, 14, 73) ;
+  border-color:rgb(133, 14, 73);
+}

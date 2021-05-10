@@ -34,6 +34,20 @@ h6 {
   margin-top: 20px;
 }
 
+.btn-color {
+  background-color: rgb(56, 56, 243);
+  border-color: rgb(56, 56, 243);
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-color:hover {
+  background-color: rgb(50, 50, 201);
+  border-color: rgb(50, 50, 201);
+}
+
 .contenedor {
   display: flex;
   justify-content: center;
