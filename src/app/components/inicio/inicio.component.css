@@ -8,9 +8,11 @@
 
 .sexo {
   font-size: 40px;
-  cursor: pointer;
 }
 
+.sexoDesactivado {
+  background-color: lightslategray;
+}
 .estilonumero {
   font-size: 32px;
   font-weight: 800px;

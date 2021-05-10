@@ -11,6 +11,8 @@ export class InicioComponent implements OnInit {
   edad = 25;
   peso = 60;
   altura = 160;
+  sexo ='Masculino';
+
   constructor() { }
 
   ngOnInit(): void {
@@ -21,4 +23,11 @@ export class InicioComponent implements OnInit {
     this.altura = event.target.value;
   }
 
+  masculino(){
+    this.sexo = 'Masculino';
+  }
+
+  femenino(){
+    this.sexo = 'Femenino';
+  }
 }
