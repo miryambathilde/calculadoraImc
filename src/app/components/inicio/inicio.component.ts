@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+/* IMPORTACION DEL ROUTER */
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -13,7 +15,8 @@ export class InicioComponent implements OnInit {
   altura = 160;
   sexo ='Masculino';
 
-  constructor() { }
+  /* para poder hacer el router DESDE ARCHIVO TS */
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -29,5 +32,12 @@ export class InicioComponent implements OnInit {
 
   femenino(){
     this.sexo = 'Femenino';
+  }
+
+  calcularIMC(){
+    //CALCULOS para calcular el IMC y luego renderizamos al componente resultado
+
+    /* routing O routeo a COMPONENTE RESULTADO */
+    this.router.navigate(['/resultado']);
   }
 }

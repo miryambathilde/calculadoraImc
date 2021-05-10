@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { ResultadoComponent } from './components/resultado/resultado.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', component: InicioComponent},
+  {path: 'resultado', component: ResultadoComponent},
+  /* aqui lo que le decimos es que cualquier cosa que no coincida con las anteriores le redireccione al componente Inicio */
+  /* ESTA RUTA DEBE IR AL FINAL PORQUE ANGULAR LEE DE ARRIBA A ABAJO */
+  {path: '**', redirectTo: ''},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
