@@ -5,7 +5,7 @@ import { ResultadoComponent } from './components/resultado/resultado.component';
 
 const routes: Routes = [
   {path: '', component: InicioComponent},
-  {path: 'resultado', component: ResultadoComponent},
+  {path: 'resultado/:valor', component: ResultadoComponent},
   /* aqui lo que le decimos es que cualquier cosa que no coincida con las anteriores le redireccione al componente Inicio */
   /* ESTA RUTA DEBE IR AL FINAL PORQUE ANGULAR LEE DE ARRIBA A ABAJO */
   {path: '**', redirectTo: ''},

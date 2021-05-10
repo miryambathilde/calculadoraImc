@@ -36,8 +36,11 @@ export class InicioComponent implements OnInit {
 
   calcularIMC(){
     //CALCULOS para calcular el IMC y luego renderizamos al componente resultado
-
+    /* formula IMC = peso/altura en m por eso dividimos entre 100 al tener cm, */
+    /* funcion matematica Math.pow para elevar, y el 2 es de elevado al cuadrado */
+    const IMC = this.peso / Math.pow(this.altura/100, 2);
+    /* TOFIXED ES PARA REDONDER CON 1 DECIMAL EN ESTE CASO */
     /* routing O routeo a COMPONENTE RESULTADO */
-    this.router.navigate(['/resultado']);
+    this.router.navigate(['/resultado', (IMC.toFixed(1))]);
   }
 }
